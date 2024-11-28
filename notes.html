@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            div {
+                border: 2px solid red;
+                padding: 20px;
+                margin: auto;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                text-align: center;
+                transition: 0.5s; /*Best to do in sub 1 second, but not too short*/
+                width: 80%;
+            }
+
+            .rounded {
+                border-radius: 50px;
+            }
+            
+            .ellipse {
+                border-radius: 50%;
+            }
+
+            .asymmetrical {
+                border-radius: 2em 1em 4em / 0.5em 3em;
+            }
+
+            .translate:hover {
+                transform: translate(50px, 100px);
+            }
+
+            .rotate:hover {
+                transform: rotate(20deg);
+            }
+
+            .scale:hover {
+                transform: scale(5, 2);
+            }
+
+            .skew:hover {
+                transform: skew(20deg, 10deg);
+            }
+
+            .matrix:hover {
+                transform: matrix(1, 0, 0.5, 1, 150, 0);
+                /*scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()*/
+            }
+
+            .animate {
+                animation: mymove 5s infinite;
+            }
+
+            @keyframes mymove {
+                50% {
+                    transform: rotate(360deg);
+                }
+            }
+
+            .transcol {
+                border-radius: 50%;
+                transition: background-color 2s, width 2s;
+            }
+
+            .transcol:hover {
+                background-color: red;
+                width: 20%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="rounded">
+            hi
+        </div>
+
+        <div class="ellipse">
+            hi
+        </div>
+
+        <div class="asymmetrical">
+            hi
+        </div>
+
+        <div class="translate">
+            hi
+        </div>
+
+        <div class="rotate">
+            hi
+        </div>
+
+        <div class="scale">
+            hi
+        </div>
+
+        <div class="skew">
+            hi
+        </div>
+
+        <div class="matrix">
+            hi
+        </div>
+
+        <div class="animate">
+            hi
+        </div>
+
+        <div class="transcol">
+            hi
+        </div>
+    </body>
+</html>
